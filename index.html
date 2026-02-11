@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我们的治愈旅程 | Our Healing Journey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              morandi: {
+                bg: '#Fdfcf8',
+                primary: '#E6D0C3',
+                secondary: '#B5C0D0',
+                accent: '#D4A5A5',
+                text: '#5E503F',
+                sage: '#CCD5AE',
+                blue: '#A2C2E0',
+              }
+            },
+            fontFamily: {
+              serif: ['"Noto Serif SC"', 'serif'],
+              sans: ['"Nunito"', 'sans-serif'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #Fdfcf8;
+        color: #5E503F;
+        overflow: hidden; /* Prevent default scroll, handle in app */
+      }
+      /* Custom scrollbar for horizontal map */
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0",
+    "three": "https://esm.sh/three@^0.182.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
